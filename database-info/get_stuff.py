@@ -12,7 +12,7 @@ stats       = ['str','dex','con','int','wis','cha','current_hp',\
                'max_hp','armor','speed']
 conditions  = ['charm','deafen','fatigue','fright','grappled',\
                'incapacitated','invisible','paralyzed','petrified',\
-               'poison','prone','restained','stun','unconious','exhaustion']
+               'poison','prone','restrained','stun','unconious','exhaustion']
 
 # ------------------------------------------------------------- # functions
 def get_stuff(id):
@@ -33,7 +33,7 @@ def get_conditions(char):
     true_conditions = []                                        #temp array
     for c in char:                                              #for every column in the table
         if c != '':                                             #if entry isnt null
-            true_conditions.append([conditions[char.index(c)],True])    #append to temp array
+            true_conditions.append([conditions[char.index(c)],int(c)])    #append to temp array
     return true_conditions                                      #return temp array
 
 # ------------------------------------------------------------- # 'main' program
