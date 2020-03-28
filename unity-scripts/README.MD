@@ -23,7 +23,7 @@ Methods/Functions in this script include;
 |---|---|---|
 |`get_data`|id (string)|begins by doing a POST request to get data from the PHP script. Then sends the response to `status`|
 |`status`|all_data  (string)|assigns the data from `get_data` into variable `all_data` . `all_data` is split up into arrays: `info`, `stats`, `all_condition_values`. Function `get_conditions` is then called at the end|
-|`get_conditions`|-|iterates though `all_condition_data` and finds all non-null values. when it finds one, it finds the 'column' it correlates to in the table (using `condition_order`) and appends that to `conditions`|
+|`get_conditions`|-|iterates though `all_condition_values` and finds all non-null values. when it finds one, it finds the 'column' it correlates to in the table (using `condition_order`) and appends that to `conditions`|
 
 
 ### `object_test.cs`
