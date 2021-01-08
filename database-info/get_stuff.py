@@ -20,7 +20,7 @@ def get_stuff(id):
         takes a string, id, makes a post request and returns the
         string response.
     '''
-    get_stuff_url = 'http://194.75.3.47/php/get_all_data.php'   #url of php script
+    get_stuff_url = 'http://[IPHERE]/php/get_all_data.php'   #url of php script
     data_id = {'id':id}                                         #info for post request
     return_data = requests.post(get_stuff_url, data = data_id)  #do the post request
     return return_data.text                                     #return text response

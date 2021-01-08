@@ -14,7 +14,7 @@ If you need passwords for the accounts, message me on whatsapp. I am the person 
   
 I recommend using the [HeidiDB](https://www.heidisql.com/) client.   
 IP for the database;  
-194.75.3.47   
+[REMOVED]   
 Port:  
 3306  
   
@@ -25,7 +25,7 @@ In the Advanced settings tab;
   
 ## Other ways of connecting to the db
 
-http://194.75.3.47/php/get_all_data.php  
+http://[IPHERE]/php/get_all_data.php  
 -> uses `get_all_data.php`  
 
 This script uses a [post](https://en.wikipedia.org/wiki/POST_(HTTP)) request to take input (The id of the character you want), query the mysql database with the input and return all relvant information relating to it.  
@@ -66,7 +66,7 @@ exhaustion,
 I decided to output text this way, as it would be easier for a program to take it all as a single string, then turn it into an array by using the seperators `\n` and `'---'`.
 
   
-http://194.75.3.47/php/input.php  
+http://[IPHERE]/php/input.php  
 -> uses `input.php`
 
 Literally just a box that takes input and sends it to the get_all_data script, since post requests are hard to do in vanilla browsers.
