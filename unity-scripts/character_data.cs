@@ -32,7 +32,7 @@ public class character_data : MonoBehaviour{
 		
 		var post_data = new Dictionary<string,string>{{"id",id}};
 		var content = new FormUrlEncodedContent(post_data);
-		var response = await client.PostAsync("http://194.75.3.47/php/get_all_data.php",content);
+		var response = await client.PostAsync("http://[IPHERE]/php/get_all_data.php",content);
 		var response_string = await response.Content.ReadAsStringAsync();
 		
 		status(response_string);
